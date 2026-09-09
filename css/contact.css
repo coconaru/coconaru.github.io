@@ -1,0 +1,47 @@
+#contact {
+    background: #f9fafb;
+}
+
+.contact-container {
+    width: min(
+        100%,
+        700px
+    );
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.contact-container
+.section-label {
+    margin-bottom: 16px;
+}
+
+.contact-container
+.section-description {
+    margin-bottom: 30px;
+}
+
+.contact-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px;
+}
+
+/* dark */
+body.dark #contact {
+    background: #0b1220;
+}
+
+body.dark #contact .section-title {
+    color: #f9fafb;
+}
+
+body.dark #contact .section-description {
+    color: #9ca3af;
+}

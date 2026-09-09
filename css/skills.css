@@ -1,0 +1,165 @@
+#skills {
+    background: #ffffff;
+}
+
+.skills-grid {
+    margin-top: 50px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.skill-card {
+    min-height: 250px;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        #e5e7eb;
+
+    border-radius: 14px;
+
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background-color var(--transition);
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #bfdbfe;
+
+    box-shadow:
+        0 20px 45px
+        rgba(
+            15,
+            23,
+            42,
+            0.08
+        );
+}
+
+
+body.dark #skills {
+    background: #030712;
+}
+
+body.dark .skill-card {
+    background: #111827;
+
+    border-color: #1f2937;
+}
+
+body.dark .skill-card:hover {
+    border-color: #1d4ed8;
+
+    box-shadow:
+        0 20px 45px
+        rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
+}
+
+
+.skill-icon {
+    width: 52px;
+    height: 52px;
+
+    margin-bottom: 24px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: var(--accent);
+
+    background: #eff6ff;
+
+    border-radius: 12px;
+
+    font-size: 1.15rem;
+
+    font-weight: 800;
+
+    transition:
+        color var(--transition),
+        background-color var(--transition);
+}
+
+body.dark .skill-icon {
+    color: #60a5fa;
+
+    background:
+        rgba(
+            30,
+            64,
+            175,
+            0.2
+        );
+}
+
+.skill-title {
+    margin-bottom: 10px;
+
+    color: #111827;
+
+    font-size: 1.05rem;
+
+    font-weight: 700;
+
+    transition: color var(--transition);
+}
+
+body.dark .skill-title {
+    color: #f9fafb;
+}
+
+.skill-description {
+    color: #6b7280;
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+
+    transition: color var(--transition);
+}
+
+body.dark .skill-description {
+    color: #9ca3af;
+}
+
+@media (max-width: 950px) {
+
+    .skills-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .skill-card {
+        min-height: auto;
+    }
+
+}

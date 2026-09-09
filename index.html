@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Portfolio website of Alfinco Ausya Deka Putra"
+    >
+
+    <meta
+        name="author"
+        content="Alfinco Ausya Deka Putra"
+    >
+
+    <title>Alfinco Ausya Deka Putra</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <div class="navbar-inner">
+
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                Alfinco<span>.</span>
+            </a>
+
+
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav">
+
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+
+                <a href="#experience" class="nav-link">
+                    Experience
+                </a>
+
+                <a href="#skills" class="nav-link">
+                    Skills
+                </a>
+
+                <a href="#projects" class="nav-link">
+                    Projects
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+
+                <button
+                    type="button"
+                    id="themeToggle"
+                    class="theme-toggle"
+                    aria-label="Toggle dark mode"
+                >
+                    <span id="themeIcon">🌙</span>
+                </button>
+
+            </div>
+
+
+            <!-- Mobile Controls -->
+            <div class="mobile-controls">
+
+                <button
+                    type="button"
+                    id="mobileThemeToggle"
+                    class="theme-toggle"
+                    aria-label="Toggle dark mode"
+                >
+                    <span id="mobileThemeIcon">🌙</span>
+                </button>
+
+                <!-- Hamburger Button -->
+                <button
+                    type="button"
+                    id="menuButton"
+                    class="menu-button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             MOBILE NAVIGATION
+        ====================================================== -->
+
+        <div
+            id="mobileMenu"
+            class="mobile-menu"
+        >
+
+            <a
+                href="#about"
+                class="mobile-link"
+            >
+                About
+            </a>
+
+            <a
+                href="#experience"
+                class="mobile-link"
+            >
+                Experience
+            </a>
+
+            <a
+                href="#skills"
+                class="mobile-link"
+            >
+                Skills
+            </a>
+
+            <a
+                href="#projects"
+                class="mobile-link"
+            >
+                Projects
+            </a>
+
+            <a
+                href="#contact"
+                class="mobile-link"
+            >
+                Contact
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section
+        id="home"
+        class="hero-section"
+    >
+
+        <div class="hero-container">
+
+            <div class="hero-content reveal">
+
+                <p class="hero-eyebrow">
+                    Open for Work
+                </p>
+
+                <h1 class="hero-title">
+                    Alfinco Ausya
+                    <span>Deka Putra</span>
+                </h1>
+
+                <p class="hero-description">
+                    I build clean, responsive, and functional software with focus on modern design and practical solution.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#projects"
+                        class="primary-button"
+                    >
+                        View Projects
+                        <span>↗</span>
+                    </a>
+
+                    <a
+                        href="#contact"
+                        class="secondary-button"
+                    >
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Profile -->
+
+            <div class="hero-profile reveal">
+
+                <div class="profile-wrapper">
+
+                    <div class="profile-glow"></div>
+
+                    <div class="profile-ring"></div>
+
+                    <div class="profile-image-container">
+
+                        <img
+                            src="img/profile.png"
+                            alt="Alfinco Ausya Deka Putra"
+                            class="profile-image"
+                            id="profileImage"
+                        >
+
+                        <div
+                            class="profile-placeholder"
+                            id="profilePlaceholder"
+                        >
+                            AD
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section
+        id="about"
+        class="section-container section-muted"
+    >
+
+        <div class="section-inner">
+
+            <div class="section-heading reveal">
+
+                <span class="section-label">
+                    About Me
+                </span>
+
+                <h2 class="section-title">
+                    Turning ideas into digital experiences.
+                </h2>
+
+                <p class="section-description">
+                    I am a fresh graduate with a Bachelor’s degree in Informatics Engineering, passionate about technology, web development, and software engineering. I have a strong interest in developing responsive, user-friendly, and functional digital solutions. With a solid academic background and experience working on various projects, I am eager to apply my skills, continuously learn new technologies, and contribute to a dynamic professional environment.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EXPERIENCE
+    ====================================================== -->
+
+    <section
+        id="experience"
+        class="section-container"
+    >
+
+        <div class="section-inner">
+
+            <div class="section-heading reveal">
+
+                <span class="section-label">
+                    Experience
+                </span>
+
+                <h2 class="section-title">
+                    My journey.
+                </h2>
+
+            </div>
+
+
+            <div class="experience-list">
+
+                <article class="experience-card reveal">
+
+                    <div class="experience-date">
+                        2019 — 2022
+                    </div>
+
+                    <div class="experience-content">
+
+                        <h3>
+                            High School Degree
+                        </h3>
+
+                        <span>
+                            SMAN 2 UNGGUL SEKAYU
+                        </span>
+
+                        <p>
+                            Graduated from SMAN 2 Unggul Sekayu, where I developed a strong foundation in academic knowledge, problem-solving, and personal development while actively preparing for further education and professional growth.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="experience-card reveal">
+
+                    <div class="experience-date">
+                        2025 — 2025
+                    </div>
+
+                    <div class="experience-content">
+
+                        <h3>
+                            Internship
+                        </h3>
+
+                        <span>
+                            BANK NEGARA INDONESIA (BNI)
+                        </span>
+
+                        <p>
+                            Intership at PT Bank Negara Indonesia (Persero) Tbk – Regional Office 03 Palembang, within the Regional Business, Transaction & Digital Development Department, gaining hands-on experience in business processes, digital development, and information technology while contributing to the development of web-based solutions.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="experience-card reveal">
+
+                    <div class="experience-date">
+                        2022 — 2026
+                    </div>
+
+                    <div class="experience-content">
+
+                        <h3>
+                            Bachelor Degree
+                        </h3>
+
+                        <span>
+                            UNIVERSITAS SRIWIJAYA
+                        </span>
+
+                        <p>
+                            Graduated Cum Laude from Universitas Sriwijaya with a Bachelor's degree in Informatics Engineering, achieving a GPA of 4.00/4.00. Developed strong skills in software development, programming, problem-solving, and information technology.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SKILLS
+    ====================================================== -->
+
+    <section
+        id="skills"
+        class="section-container"
+    >
+
+        <div class="section-inner">
+
+            <div class="section-heading reveal">
+
+                <span class="section-label">
+                    Skills
+                </span>
+
+                <h2 class="section-title">
+                    Technologies I work with.
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <article class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        &lt;/&gt;
+                    </div>
+
+                    <h3 class="skill-title">
+                        HTML
+                    </h3>
+
+                    <p class="skill-description">
+                        Building semantic and well-structured web pages with accessible markup.
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        #
+                    </div>
+
+                    <h3 class="skill-title">
+                        CSS
+                    </h3>
+
+                    <p class="skill-description">
+                        Creating responsive layouts, animations, and modern visual interfaces.
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        JS
+                    </div>
+
+                    <h3 class="skill-title">
+                        JavaScript
+                    </h3>
+
+                    <p class="skill-description">
+                        Adding interaction, dynamic functionality, and better user experiences.
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        L
+                    </div>
+
+                    <h3 class="skill-title">
+                        Laravel
+                    </h3>
+
+                    <p class="skill-description">
+                        Developing structured web applications using Laravel and PHP.
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        SQL
+                    </div>
+
+                    <h3 class="skill-title">
+                        MySQL
+                    </h3>
+
+                    <p class="skill-description">
+                        A relational database management system used to store, manage, and retrieve structured data efficiently for web and software applications.
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        F
+                    </div>
+
+                    <h3 class="skill-title">
+                        Figma
+                    </h3>
+
+                    <p class="skill-description">
+                        Collaborative design tool used to create UI/UX designs, wireframes, prototypes, and interactive digital experiences.
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        Py
+                    </div>
+
+                    <h3 class="skill-title">
+                        Python
+                    </h3>
+
+                    <p class="skill-description">
+                        Versatile programming language used for developing applications, automation, data processing, and implementing efficient programming solutions.
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        C
+                    </div>
+
+                    <h3 class="skill-title">
+                        Canva
+                    </h3>
+
+                    <p class="skill-description">
+                        Design platform used to create visual content, presentations, social media graphics, and other creative materials.
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        G
+                    </div>
+
+                    <h3 class="skill-title">
+                        Git
+                    </h3>
+
+                    <p class="skill-description">
+                        Version control system used to track code changes, manage projects, and collaborate efficiently with development teams.
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        J
+                    </div>
+
+                    <h3 class="skill-title">
+                        Java
+                    </h3>
+
+                    <p class="skill-description">
+                        Object-oriented programming language used to build reliable, scalable, and cross-platform applications.
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        T
+                    </div>
+
+                    <h3 class="skill-title">
+                        Tailwind
+                    </h3>
+
+                    <p class="skill-description">
+                        Utility-first CSS framework used to build responsive, modern, and customizable user interfaces efficiently.
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        SL
+                    </div>
+
+                    <h3 class="skill-title">
+                        SQLite
+                    </h3>
+
+                    <p class="skill-description">
+                        SQLite Lightweight, self-contained relational database used to store and manage data efficiently without requiring a separate database server.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROJECTS
+    ====================================================== -->
+
+    <section
+        id="projects"
+        class="projects-section"
+    >
+
+        <div class="projects-container">
+
+            <div class="projects-heading reveal">
+
+                <span class="projects-eyebrow">
+                    PORTFOLIO
+                </span>
+
+                <h2>
+                    Past Projects
+                </h2>
+
+                <p>
+                    A selection of projects that represent my experience.
+                </p>
+
+            </div>
+
+
+            <!-- PROJECT SLIDER -->
+
+            <div
+                id="projectSlider"
+                class="project-slider reveal"
+            >
+
+                <!-- Previous -->
+
+                <button
+                    type="button"
+                    id="projectPrev"
+                    class="project-slider-button project-slider-button-prev"
+                    aria-label="Previous project"
+                >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M15 18l-6-6 6-6"></path>
+                    </svg>
+
+                </button>
+
+
+                <!-- Viewport -->
+
+                <div class="project-slider-viewport">
+
+                    <div
+                        id="projectSliderTrack"
+                        class="project-slider-track"
+                    >
+
+                        <!-- PROJECT 1 -->
+
+                        <article class="featured-project">
+
+                            <div class="featured-project-image">
+
+                                <img
+                                    src="img/projects/project-1.jpg"
+                                    alt="Project One"
+                                >
+
+                            </div>
+
+
+                            <div class="featured-project-content">
+
+                                <span class="featured-category">
+                                    Web Application
+                                </span>
+
+                                <h3>
+                                    Sistem Informasi Administrasi Jurusan
+                                </h3>
+
+                                <p>
+                                    An information system for managing administrative activities in an academic environment.
+                                </p>
+
+                                <div class="featured-tech">
+                                    <span>Laravel</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+
+                                <a
+                                    href="#"
+                                    class="featured-link"
+                                >
+                                    View Project
+                                    <span>↗</span>
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- PROJECT 2 -->
+
+                        <article class="featured-project">
+
+                            <div class="featured-project-image">
+
+                                <img
+                                    src="img/projects/project-2.jpg"
+                                    alt="Project Two"
+                                >
+
+                            </div>
+
+
+                            <div class="featured-project-content">
+
+                                <span class="featured-category">
+                                    Web Application
+                                </span>
+
+                                <h3>
+                                    Sistem Ekosistem Nasabah BNI
+                                </h3>
+
+                                <p>
+                                    An ecosystem that visualizes the relationships between individual and non-individual customers.
+                                </p>
+
+                                <div class="featured-tech">
+                                    <span>PHP</span>
+                                    <span>JavaScript</span>
+                                    <span>CSS</span>
+                                    <span>MySQL</span>
+                                </div>
+
+                                <a
+                                    href="#"
+                                    class="featured-link"
+                                >
+                                    View Project
+                                    <span>↗</span>
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- PROJECT 3 -->
+
+                        <article class="featured-project">
+
+                            <div class="featured-project-image">
+
+                                <img
+                                    src="img/projects/project-3.jpg"
+                                    alt="Project Three"
+                                >
+
+                            </div>
+
+
+                            <div class="featured-project-content">
+
+                                <span class="featured-category">
+                                    Landing Page
+                                </span>
+
+                                <h3>
+                                    U.A Academy
+                                </h3>
+
+                                <p>
+                                    A responsive landing page focused on clear visual hierarchy and user experience.
+                                </p>
+
+                                <div class="featured-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                </div>
+
+                                <a
+                                    href="#"
+                                    class="featured-link"
+                                >
+                                    View Project
+                                    <span>↗</span>
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- PROJECT 4 -->
+
+                        <article class="featured-project">
+
+                            <div class="featured-project-image">
+
+                                <img
+                                    src="img/projects/project-4.jpg"
+                                    alt="Project Four"
+                                >
+
+                            </div>
+
+
+                            <div class="featured-project-content">
+
+                                <span class="featured-category">
+                                    Machine Learning Model
+                                </span>
+
+                                <h3>
+                                    Sentiment Analysis Model For Tourist Reviews
+                                </h3>
+
+                                <p>
+                                    XLM-RoBERTa model for sentiment analysis on TripAdvisor reviews with more than 97% accuracy.
+                                </p>
+
+                                <div class="featured-tech">
+                                    <span>Python</span>
+                                    <span>ML</span>
+                                </div>
+
+                                <a
+                                    href="#"
+                                    class="featured-link"
+                                >
+                                    View Project
+                                    <span>↗</span>
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- PROJECT 5 -->
+
+                        <article class="featured-project">
+
+                            <div class="featured-project-image">
+
+                                <img
+                                    src="img/projects/project-5.jpg"
+                                    alt="Project Five"
+                                >
+
+                            </div>
+
+
+                            <div class="featured-project-content">
+
+                                <span class="featured-category">
+                                    Game
+                                </span>
+
+                                <h3>
+                                    Suddenly a Meteor Struck the Earth and I Became a Water Purifier
+                                </h3>
+
+                                <p>
+                                    A narrative-driven visual novel set in a modern world, featuring interactive dialogue, choices, and water purification minigames.
+                                </p>
+
+                                <div class="featured-tech">
+                                    <span>Godot</span>
+                                    <span>GDScript</span>
+                                </div>
+
+                                <a
+                                    href="#"
+                                    class="featured-link"
+                                >
+                                    View Project
+                                    <span>↗</span>
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Next -->
+
+                <button
+                    type="button"
+                    id="projectNext"
+                    class="project-slider-button project-slider-button-next"
+                    aria-label="Next project"
+                >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M9 18l6-6-6-6"></path>
+                    </svg>
+
+                </button>
+
+            </div>
+
+
+            <!-- Counter -->
+
+            <div class="project-slider-controls reveal">
+
+                <div class="project-slider-bottom">
+
+                    <div
+                        id="projectSliderCounter"
+                        class="project-slider-counter"
+                    >
+                        01 <span>/ 05</span>
+                    </div>
+
+                    <div class="project-progress">
+
+                        <div
+                            id="projectProgress"
+                            class="project-progress-bar"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section
+        id="contact"
+        class="section-container section-muted"
+    >
+
+        <div class="contact-container reveal">
+
+            <span class="section-label">
+                Contact
+            </span>
+
+            <h2 class="section-title">
+                Let’s work together.
+            </h2>
+
+            <p class="section-description">
+                Have a project, idea, or opportunity in mind?
+                Feel free to get in touch.
+            </p>
+
+            <div class="contact-buttons">
+
+                <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=alfincoausyadekaputra@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="primary-button"
+                >
+                    Email Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <p>
+            ©
+            <span id="year"></span>
+            Alfinco Ausya Deka Putra.
+            All rights reserved.
+        </p>
+
+
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="js/theme.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/reveal.js" defer></script>
+<script src="js/projects.js" defer></script>
+<script src="js/script.js" defer></script>
+
+</body>
+</html>
